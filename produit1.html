@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy Watch</title>
+    <link rel="stylesheet" href="produit.css">
+    <style>
+        .price {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="product-detail">
+        <h2>Samsung Galaxy Watch</h2>
+        <img src="1.jpg" alt="Produit 1" height="300" width="300">
+        <p>Samsung Galaxy Watch (42mm) Smartwatch (Bluetooth) Android/iOS Compatible - SM-R810 - International Version - No Warranty (Midnight Black).</p>
+        
+        <label for="number">Qte:</label>
+        <input type="number" id="number" name="number" min="1" value="1" max="10">
+
+        <p id="price" class="price"></p>
+        <label for="Color">Color:</label>
+        <input type="radio" id="Black" name="Color"> Black
+        <input type="radio" id="white" name="Color">White
+        
+        <br>
+        <Button> Buy</Button><br><br>
+        <a href="acceil.html">← Back to products</a>
+    </section>
+
+    <script>
+        const pricePerWatch = 20; 
+        const quantityInput = document.getElementById('number');
+        const priceDisplay = document.getElementById('price'); 
+
+        
+        function calculatePrice() {
+            const quantity = quantityInput.value;
+            const totalPrice = quantity * pricePerWatch;
+            priceDisplay.innerHTML = `Prix Total: £${totalPrice}`;
+        }
+
+        
+        calculatePrice();
+
+        
+        quantityInput.addEventListener('input', calculatePrice);
+    </script>
+</body>
+</html>

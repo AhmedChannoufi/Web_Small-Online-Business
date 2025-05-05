@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy A53 5G</title>
+    <link rel="stylesheet" href="produit.css">
+    <style>
+        .price {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="product-detail">
+        <h2>Galaxy A53 5G</h2>
+        <img src="2.jpg" alt="Produit 1" height="300" width="300">
+        <p>In addition to its lightweight and compact design, the Samsung Galaxy A53 5G features a screen with a resolution of 2,400 x 1,080 pixels. It is made with Gorilla Glass 5, providing impressive durability. The phone offers a battery capacity of 5,000 mAh, compared to just 4,500 mAh for its predecessor.
+
+        </p>
+        
+        <label for="number">Qty:</label>
+        <input type="number" id="number" name="number" min="1" value="1" max="10"> <br> <br>
+        <label for="Color">Color:</label>
+        <input type="radio" name="Gris" id="Color">Black
+        <input type="radio" name="Blanc" id="Color">White <br>
+
+        <p id="price" class="price"></p>
+        
+        <br>
+        
+        <button>Buy</button><br><br>
+
+        <a href="acceil.html">← Back to products</a>
+    </section>
+
+    <script>
+        const pricePerWatch = 459.00; 
+        const quantityInput = document.getElementById('number');
+        const priceDisplay = document.getElementById('price'); 
+
+        
+        function calculatePrice() {
+            const quantity = quantityInput.value;
+            const totalPrice = quantity * pricePerWatch;
+            priceDisplay.innerHTML = `Prix Total: £${totalPrice}`;
+        }
+
+        
+        calculatePrice();
+
+        
+        quantityInput.addEventListener('input', calculatePrice);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body >
+    <form action="log.php" method="get"></form>
+    
+    
+
+        
+    <fieldset>
+        <legend style="color: red;">Create your account
+        </legend>
+        <label for="Genre">Gender :</label>
+        <input type="radio" name="genre" id="H"> M
+        <input type="radio" name="genre" id="F"> F <br>
+        <label for="Name">First name</label>
+        <input type="text" id="Nom" required maxlength="30"><br>
+        <label for="Prenom">Last name</label>
+        <input type="text" id="Prenom" maxlength="30" required><br>
+        <label for="Email">Email</label>
+        <input type="email" id="Email"required><br>
+        <label for="Password">Password</label>
+        <input type="password" id="pass" name="pass" required maxlength="20" minlength="6"><br>
+        
+        
+
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel"><br>
+
+        <input type="submit" class="btn"><br>
+        
+        <a href="connecter.html">Already have an account? Log in!</a>
+    </fieldset>
+
+</form>
+    
+</body>
+</html>

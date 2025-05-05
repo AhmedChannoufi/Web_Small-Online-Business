@@ -1,0 +1,63 @@
+
+
+
+fieldset {
+    background-color: white;
+    padding: 20px 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 170px;
+}
+input{
+    margin-bottom: 30px;
+}
+b{
+    margin-right: 20px;
+}
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.btn{
+
+    margin-right: 60px;
+    margin-left: 10px;
+    padding: 10px 160px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.btn:hover{
+    font-size: medium;
+}
+a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: red;
+    
+}
+footer{
+    text-align: 100px;
+}
+
+
+
